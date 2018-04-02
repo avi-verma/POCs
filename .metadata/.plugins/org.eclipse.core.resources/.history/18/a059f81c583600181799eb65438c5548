@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+@Entity
+public class Movies {
+
+	@Id
+	@GeneratedValue
+}
