@@ -35,7 +35,7 @@ public class WeatherConfig {
 	@Autowired
 	public StepBuilderFactory stepBuilderFactory;
 	
-	@Value(value="input/weather_*.csv")
+	@Value(value="input/weather_1.csv")
 	private Resource[] resources;
 	
 	@Bean
