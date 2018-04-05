@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="demo"/>
+<aop-project name="FinalProject-Data"/>
 <aop-project name="MultiResourceItemReaderSpringBatch"/>
+<aop-project name="FinalProject"/>
+<aop-project name="demo"/>
 <aop-project name="OpenApi"/>
+<aop-project name="ConsumeApi"/>
+<aop-project name="DemoApi"/>
 </aop-reference-model>
