@@ -7,11 +7,12 @@ public class Weather_address {
 	private long id;
 	private String name;
 	private MainWeather main;
-	public MainWeather getMainWeather() {
+	
+	public MainWeather getMain() {
 		return main;
 	}
-	public void setMainWeather(MainWeather mainWeather) {
-		this.main = mainWeather;
+	public void setMain(MainWeather main) {
+		this.main = main;
 	}
 	public long getId() {
 		return id;

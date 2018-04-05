@@ -10,8 +10,10 @@ public class ApiProcessor implements ItemProcessor<Weather_address, Weather_addr
 	@Override
 	public Weather_address process(Weather_address item) throws Exception {
 		System.out.println("Kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+		System.out.println(item.getName());
 			 Weather_address rest= restTemplate.getForObject("http://api.openweathermap.org/data/2.5/weather?q="+item.getName()+"&appid=191cc3c51a402049241235af01f9e78f", Weather_address.class);
-			  item.setMainWeather(rest.getMainWeather());
+			 //System.out.println(rest.getMain().getTemp()); 
+			item.setMain(rest.getMain());
 		return item;
 	}
 }
