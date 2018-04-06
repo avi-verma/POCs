@@ -37,6 +37,7 @@ public class ApiConfig {
 
 	    @Bean
 	    public Step step1() {
+	    	System.out.println(weather.length);
 	    	System.out.println((int)Math.ceil(chunks));
 	        return stepBuilderFactory.get("step1")
 	                .<Weather_address, Weather_address> chunk((int)Math.ceil(chunks))

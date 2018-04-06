@@ -4,6 +4,7 @@
 <aop-project name="MultiResourceItemReaderSpringBatch"/>
 <aop-project name="FinalProject"/>
 <aop-project name="demo"/>
+<aop-project name="FinalProjectAlternate"/>
 <aop-project name="OpenApi"/>
 <aop-project name="ConsumeApi"/>
 <aop-project name="DemoApi"/>
