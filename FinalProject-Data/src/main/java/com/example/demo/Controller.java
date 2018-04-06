@@ -14,8 +14,21 @@ public class Controller {
 		@RequestMapping("/weather_data")
 		public List<Weather_address> getData(){
 			
-			list.add(new Weather_address(235,"Bangalore, IN"));
-			list.add(new Weather_address(25,"Delhi, IN"));
+			list.add(new Weather_address("Bangalore, IN"));
+			list.add(new Weather_address("Delhi, IN"));
+			list.add(new Weather_address("Chennai, IN"));
+			list.add(new Weather_address("Lucknow, IN"));
+			list.add(new Weather_address("Pune, IN"));
+			list.add(new Weather_address("Agra, IN"));
+			list.add(new Weather_address("Varanasi, IN"));
+			list.add(new Weather_address("Allahabad, IN"));
+			list.add(new Weather_address("Jammu, IN"));
+			list.add(new Weather_address("Shimla, IN"));
+			list.add(new Weather_address("New York, US"));
+			list.add(new Weather_address("London, GB"));
+			list.add(new Weather_address("Beijing, CN"));
+			list.add(new Weather_address("Mumbai, IN"));
+			
 			
 			return list;
 		}
