@@ -16,6 +16,7 @@ public class ApiController {
 	@RequestMapping("/getInfo")
 	public ArrayList<MainWeather> getInfo() {
 	Weather_info[] cities=restTemplate.getForObject("http://localhost:7171/weather_data", Weather_info[].class);
+	System.out.println(cities.length);
 	for(Weather_info item:cities) {
 		Weather_info info=restTemplate.getForObject("http://api.openweathermap.org/data/2.5/weather?q="+item.getName()+"&appid=191cc3c51a402049241235af01f9e78f", Weather_info.class);
 		list.add(info.getMain());

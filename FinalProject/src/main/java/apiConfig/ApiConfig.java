@@ -28,6 +28,7 @@ public class ApiConfig {
 	double chunks=Math.sqrt(new Double(weather.length));
 	 @Bean
 	    public Job myJob() {
+		 System.out.println(weather.length);
 	        return jobBuilderFactory.get("myJob")
 	                .incrementer(new RunIdIncrementer())
 	                .flow(step1())
@@ -37,8 +38,7 @@ public class ApiConfig {
 
 	    @Bean
 	    public Step step1() {
-	    	System.out.println(weather.length);
-	    	System.out.println((int)Math.ceil(chunks));
+	    	 	System.out.println((int)Math.ceil(chunks));
 	        return stepBuilderFactory.get("step1")
 	                .<Weather_address, Weather_address> chunk((int)Math.ceil(chunks))
 	                .reader(new BatchApiReader("http://localhost:7171/weather_data",restTemplate))

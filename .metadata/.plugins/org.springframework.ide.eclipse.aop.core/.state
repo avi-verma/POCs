@@ -7,5 +7,6 @@
 <aop-project name="FinalProjectAlternate"/>
 <aop-project name="OpenApi"/>
 <aop-project name="ConsumeApi"/>
+<aop-project name="EmailSenderApp"/>
 <aop-project name="DemoApi"/>
 </aop-reference-model>
